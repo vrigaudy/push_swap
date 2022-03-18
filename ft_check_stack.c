@@ -25,7 +25,8 @@ static void	ft_check_digit(char **arg)
 {
 	int	i;
 	int	j;
-	i = 0;
+
+	i = 1;
 	j = 0;
 	while (arg[i])
 	{
@@ -44,18 +45,14 @@ static void	ft_check_digit(char **arg)
 
 static void	ft_check_int(char **arg)
 {
-	int		i;
-	int		j;
-	int		swa;
+	int	i;
+	int	j;
 	char	*swap;
 
-	i = 0;
+	i = 1;
 	while (arg[i])
 	{
-		swa = ft_atoi(arg[i]);
-		swap = ft_itoa(swa);
-		ft_printf("swap = %s\n", swap);
-		ft_printf("arg = %s\n", arg[i]);
+		swap = ft_itoa(ft_atoi(arg[i]));
 		if (ft_strlen(arg[i]) != ft_strlen(swap))
 		{
 			ft_printf("Error\n");
@@ -71,6 +68,7 @@ static void	ft_check_int(char **arg)
 			}
 			j++;
 		}
+		i++;
 	}
 }
 
@@ -107,11 +105,7 @@ static void	ft_check_double(char **arg)
 void	ft_check_stack(int ac, char **av)
 {
 	ft_check_ac(ac);
-	ft_printf("Correct numbers of arguments\n");
 	ft_check_digit(av);
-	ft_printf("All arguments are digit\n");
 	ft_check_int(av);
-	ft_printf("No int overflow\n");
 	ft_check_double(av);
-	ft_printf("No doubles in arguments\n");
 }
