@@ -3,7 +3,7 @@ CC =						gcc
 RM = 						rm -rf
 
 # EXECUTABLE
-NAME =						exec	
+NAME = 						push_swap	
 PUSH_SWAP =					push_swap
 
 # FLAGS
@@ -25,8 +25,8 @@ FT_PRINTF =					libftprintf.a
 LIBFT =						libft.a
 
 # SOURCES
-SRC =						main.c\
-							ft_check_stack.c\
+SRC =						./src/main.c\
+							./src/ft_check_stack.c\
 
 # OBJECTS
 OBJ =						$(SRC:.c=.o)
@@ -59,4 +59,4 @@ re:							clean all
 
 fre:						fclean all 
 
-.PHONY:						all bonus clean fclean re fre
+.PHONY:						all clean fclean re fre

@@ -1,0 +1,5 @@
+.gitigonore
+push_swap
+*.o
+.*.sw*
+*.a

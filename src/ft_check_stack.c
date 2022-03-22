@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 static void	ft_check_ac(int	ac)
 {
-	if (ac < 3)
+	if (ac < 2)
 	{
 		ft_printf("Error\n");
 		exit(EXIT_FAILURE);
@@ -26,7 +26,7 @@ static void	ft_check_digit(char **arg)
 	int	i;
 	int	j;
 
-	i = 1;
+	i = 0;
 	j = 0;
 	while (arg[i])
 	{
@@ -49,7 +49,7 @@ static void	ft_check_int(char **arg)
 	int	j;
 	char	*swap;
 
-	i = 1;
+	i = 0;
 	while (arg[i])
 	{
 		swap = ft_itoa(ft_atoi(arg[i]));

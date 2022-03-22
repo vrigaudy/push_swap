@@ -10,10 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 int	main(int ac, char **av)
 {
-	ft_check_stack(ac, av);
+	int	i;
+	char	**tab;
+
+	i = 0;
+	tab = av;
+	if (ac == 2)
+		tab = ft_split(av[1], ' ');
+	else
+		tab++;
+	ft_check_stack(ac, tab);
 	return (0);
 }
