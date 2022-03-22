@@ -1,6 +1,6 @@
 .gitignore
-push_swap
-*.o
-.*.sw*
-*.a
 .DS_Store
+*.o
+*.a
+.*.sw*
+push_swap
