@@ -1,5 +1,6 @@
-.gitigonore
+.gitignore
 push_swap
 *.o
 .*.sw*
 *.a
+.DS_store
