@@ -3,4 +3,4 @@ push_swap
 *.o
 .*.sw*
 *.a
-.DS_store
+.DS_Store
