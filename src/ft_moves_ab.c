@@ -6,12 +6,12 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:44:42 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/16 18:05:11 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/23 22:53:41 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 void	sr()
 {
