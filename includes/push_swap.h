@@ -22,12 +22,13 @@
 
 void	ft_check_stack(int ac, char **av);
 
-typedef struct elem
+typedef struct	s_store
 {
-	int			num;
-	struct elem	*prev;
-	struct elem *next;
-	int			branch;
-}	elem;
+	int	size;
+	int	lim_a;
+	int	lim_b;
+	int	sorted_size;
+	int	sorted_start;
+}				t_store;
 
 #endif

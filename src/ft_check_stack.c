@@ -39,6 +39,7 @@ static void	ft_check_digit(char **arg)
 			}
 			j++;
 		}
+		j = 0;
 		i++;
 	}
 }
