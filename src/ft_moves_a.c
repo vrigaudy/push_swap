@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:23:50 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/23 22:53:38 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/24 16:44:54 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_pa(int *stack_a, int *stack_b, t_store *bank)
 			stack_a[i + 1] = stack_a[i];
 			i--;
 		}
-		stack_a[0] = stack_n[0];
+		stack_a[0] = stack_b[0];
 		while (j <= bank->lim_b - 2)
 		{
 			stack_b[j] = stack_b[j + 1];

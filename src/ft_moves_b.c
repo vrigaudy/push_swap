@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:44:18 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/23 22:53:40 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/24 16:44:56 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	ft_sb(int *stack_b, t_store *bank)
 {
 	int	swap;
 
-	if (bank->lim_a > 2)
+	if (bank->lim_b > 2)
 	{
 		swap = stack_b[0];
-		stack_b[0] = stack_a[1];
+		stack_b[0] = stack_b[1];
 		stack_b[1] = swap;
 		ft_printf("sb\n");
 	}
@@ -39,7 +39,7 @@ void	ft_pb(int *stack_b, int *stack_a, t_store *bank)
 			stack_b[i + 1] = stack_b[i];
 			i--;
 		}
-		stack_a[0] = stack_n[0];
+		stack_b[0] = stack_a[0];
 		while (j <= bank->lim_a - 2)
 		{
 			stack_a[j] = stack_a[j + 1];
