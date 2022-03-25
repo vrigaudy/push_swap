@@ -32,6 +32,10 @@ void	ft_sb(int *stack_b, t_store *bank);
 void	ft_rrb(int *stack_b, t_store *bank);
 void	ft_pb(int *stack_b, int *stack_a, t_store *bank);
 
+void	ft_ss(int *stack_a, int *stack_b, t_store *bank);
+void	ft_rr(int *stack_a, int *stack_b, t_store *bank);
+void	ft_rrr(int *stack_a, int *stack_b, t_store *bank);
+
 typedef struct	s_store
 {
 	int	size;
