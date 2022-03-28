@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 15:42:43 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/24 16:44:58 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/28 22:42:45 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,13 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+typedef struct	s_store
+{
+	int	size;
+	int	lim_a;
+	int	lim_b;
+}				t_store;
 
 void	ft_check_stack(int ac, char **av);
 
@@ -36,13 +43,8 @@ void	ft_ss(int *stack_a, int *stack_b, t_store *bank);
 void	ft_rr(int *stack_a, int *stack_b, t_store *bank);
 void	ft_rrr(int *stack_a, int *stack_b, t_store *bank);
 
-typedef struct	s_store
-{
-	int	size;
-	int	lim_a;
-	int	lim_b;
-	int	sorted_size;
-	int	sorted_start;
-}				t_store;
+void	ft_algo(int *stack_a, int *stack_b, t_store *bank);
+
+void	ft_size_is_2_or_3(int *stack_a, t_store *bank);
 
 #endif

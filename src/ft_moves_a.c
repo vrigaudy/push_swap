@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 18:23:50 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/24 16:44:54 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/28 19:16:05 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_sa(int *stack_a, t_store *bank)
 {
 	int	swap;
 
-	if (bank->lim_a > 2)
+	if (bank->lim_a > 1)
 	{
 		swap = stack_a[0];
 		stack_a[0] = stack_a[1];

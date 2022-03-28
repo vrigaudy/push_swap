@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 17:44:42 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/24 16:44:57 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/03/28 18:14:17 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_ss(int *stack_a, int *stack_b, t_store *bank)
 	int	swap_a;
 	int	swap_b;
 
-	if (bank->lim_a > 2 && bank->lim_b > 2)
+	if (bank->lim_a > 1 && bank->lim_b > 1)
 	{
 		swap_a = stack_a[0];
 		swap_b = stack_b[0];

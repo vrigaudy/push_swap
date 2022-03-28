@@ -27,6 +27,11 @@ LIBFT =						libft.a
 # SOURCES
 SRC =						./src/main.c\
 							./src/ft_check_stack.c\
+							./src/ft_moves_a.c\
+							./src/ft_moves_b.c\
+							./src/ft_moves_ab.c\
+							./src/ft_edge_case.c\
+							./src/ft_algo.c\
 
 # OBJECTS
 OBJ =						$(SRC:.c=.o)
