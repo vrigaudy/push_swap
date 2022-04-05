@@ -6,26 +6,11 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 16:57:56 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/04/04 17:22:29 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/05 15:58:41 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
-
-static void	ft_transform(int *stack_a, t_store *bank)
-{
-	int	i;
-	int	j;
-	int	**mirror;
-
-	i = 0;
-	j = 0;
-	mirror = malloc(sizeof(int) * 2 * bank.size);
-	if (!mirror)
-		return (0);
-	
-	free(mirror);
-}
 
 static void	ft_struct_init(t_store *bank, char **tab)
 {
@@ -79,7 +64,6 @@ int	main(int ac, char **av)
 	if (!stack_a || !stack_b)
 		return (0);
 	ft_stack_init(stack_a, tab);
-	ft_transform()
 	ft_algo(stack_a, stack_b, &bank);
 	while (i < bank.size)
 	{

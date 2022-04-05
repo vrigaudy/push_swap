@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 15:42:43 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/04/04 16:55:33 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/05 15:58:45 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ void	ft_rrr(int *stack_a, int *stack_b, t_store *bank);
 void	ft_algo(int *stack_a, int *stack_b, t_store *bank);
 
 void	ft_size_is_1_to_3(int *stack_a, t_store *bank);
-void	ft_size_is_4_or_5(int *stack_a, int *stack_b, t_store *bank);
+void	ft_size_is_4_to_6(int *stack_a, int *stack_b, t_store *bank);
 
 #endif
