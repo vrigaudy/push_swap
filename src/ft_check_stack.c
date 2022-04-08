@@ -32,7 +32,8 @@ static void	ft_check_digit(char **arg)
 	{
 		while (arg[i][j])
 		{
-			if (ft_isdigit(arg[i][j]) == 0 && arg[i][0] != '-')
+			if (ft_isdigit(arg[i][j]) == 0 && arg[i][0] != '-' 
+					&& arg[i][0] != '+')
 			{
 				ft_printf("Error\n");
 				exit(EXIT_FAILURE);
@@ -77,7 +78,6 @@ static void	ft_check_double(char **arg)
 {
 	int	i;
 	int	j;
-	int	k;
 
 	i = 0;
 	j = 1;
@@ -85,21 +85,15 @@ static void	ft_check_double(char **arg)
 	{
 		while (arg[j])
 		{
-			if (ft_strlen(arg[i]) == ft_strlen(arg[j]))
+			if (ft_atoi(arg[i]) == ft_atoi(arg[j]))
 			{
-				k = 0;
-				while (arg[i][k] && arg[j][k] && arg[i][k] == arg[j][k])
-					k++;
-				if (arg[i][k] == '\0' || arg[j][k] == '\0')
-				{
-					ft_printf("Error\n");
-					exit(EXIT_FAILURE);
-				}
+				ft_printf("Error\n");
+				exit(EXIT_FAILURE);
 			}
 			j++;
 		}
-		i++;
-		j = i + 1;
+	i++;
+	j = i + 1;
 	}
 }
 
