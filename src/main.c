@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 16:57:56 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/04/05 15:58:41 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/09 16:42:10 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,7 @@ int	main(int ac, char **av)
 	char	**tab;
 	int		*stack_a;
 	int		*stack_b;
-	int		i;
 
-	i = 0;
 	tab = ft_tab(ac, av);
 	ft_check_stack(ac, tab);
 	ft_struct_init(&bank, tab);
@@ -65,12 +63,6 @@ int	main(int ac, char **av)
 		return (0);
 	ft_stack_init(stack_a, tab);
 	ft_algo(stack_a, stack_b, &bank);
-	while (i < bank.size)
-	{
-		ft_printf("%d ", stack_a[i]);
-		i++;
-	}
-	ft_printf("\n");
 	free(stack_a);
 	free(stack_b);
 	return (0);
