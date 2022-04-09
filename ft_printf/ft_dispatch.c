@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/06 19:31:43 by vrigaudy          #+#    #+#             */
-/*   Updated: 2021/12/15 16:31:56 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/09 17:48:22 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ void	ft_dispatch(va_list arg, char c, int *count)
 		ft_putstr_pf("0x", count);
 		ft_putnbr_base_pf(va_arg(arg, unsigned long int), basemin, count);
 	}
-	if (c == '%')	
+	if (c == '%')
 		ft_putchar_pf('%', count);
 }

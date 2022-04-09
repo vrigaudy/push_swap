@@ -6,13 +6,13 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 16:39:15 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/03/28 22:42:46 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/09 17:58:12 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-static void	ft_check_ac(int	ac)
+static void	ft_check_ac(int ac)
 {
 	if (ac < 2)
 	{
@@ -32,7 +32,7 @@ static void	ft_check_digit(char **arg)
 	{
 		while (arg[i][j])
 		{
-			if (ft_isdigit(arg[i][j]) == 0 && arg[i][0] != '-' 
+			if (ft_isdigit(arg[i][j]) == 0 && arg[i][0] != '-'
 					&& arg[i][0] != '+')
 			{
 				ft_printf("Error\n");
@@ -47,8 +47,8 @@ static void	ft_check_digit(char **arg)
 
 static void	ft_check_int(char **arg)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*swap;
 
 	i = 0;
