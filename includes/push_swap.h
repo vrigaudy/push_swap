@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 15:42:43 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/04/09 17:53:07 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/13 11:15:51 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef	struct	s_store{
+typedef struct s_store
+{
 	int	size;
 	int	lim_a;
 	int	lim_b;

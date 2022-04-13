@@ -6,7 +6,7 @@
 /*   By: vrigaudy <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 16:39:15 by vrigaudy          #+#    #+#             */
-/*   Updated: 2022/04/09 17:58:12 by vrigaudy         ###   ########.fr       */
+/*   Updated: 2022/04/13 11:13:53 by vrigaudy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,11 @@ static void	ft_check_digit(char **arg)
 	j = 0;
 	while (arg[i])
 	{
+		if ((arg[i][0] == '-' || arg[i][0] == '+') && ft_strlen(arg[i]) > 1)
+			j++;
 		while (arg[i][j])
 		{
-			if (ft_isdigit(arg[i][j]) == 0 && arg[i][0] != '-'
-					&& arg[i][0] != '+')
+			if (ft_isdigit(arg[i][j]) == 0)
 			{
 				ft_printf("Error\n");
 				exit(EXIT_FAILURE);
@@ -92,8 +93,8 @@ static void	ft_check_double(char **arg)
 			}
 			j++;
 		}
-	i++;
-	j = i + 1;
+		i++;
+		j = i + 1;
 	}
 }
 
