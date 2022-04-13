@@ -27,7 +27,7 @@ typedef struct s_store
 	int	lim_b;
 }				t_store;
 
-void	ft_check_stack(int ac, char **av);
+void	ft_check_stack(char **av);
 
 void	ft_ra(int *stack_a, t_store *bank);
 void	ft_sa(int *stack_a, t_store *bank);
