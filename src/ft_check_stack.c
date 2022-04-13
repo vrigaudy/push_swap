@@ -12,15 +12,6 @@
 
 #include "../includes/push_swap.h"
 
-static void	ft_check_ac(int ac)
-{
-	if (ac < 2)
-	{
-		ft_printf("Error\n");
-		exit(EXIT_FAILURE);
-	}
-}
-
 static void	ft_check_digit(char **arg)
 {
 	int	i;
@@ -98,9 +89,8 @@ static void	ft_check_double(char **arg)
 	}
 }
 
-void	ft_check_stack(int ac, char **av)
+void	ft_check_stack(char **av)
 {
-	ft_check_ac(ac);
 	ft_check_digit(av);
 	ft_check_int(av);
 	ft_check_double(av);
