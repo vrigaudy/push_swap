@@ -55,7 +55,7 @@ int	main(int ac, char **av)
 	int		*stack_b;
 
 	tab = ft_tab(ac, av);
-	ft_check_stack(ac, tab);
+	ft_check_stack(tab);
 	ft_struct_init(&bank, tab);
 	stack_a = malloc(sizeof(int) * bank.size);
 	stack_b = malloc(sizeof(int) * bank.size);
